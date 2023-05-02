@@ -3,6 +3,8 @@ const { User } = require('../../models');
 
 // All of these routes are prefixed with '/api/users'
 router.post('/', async (req, res) => {
+  console.log("Body Data: ", req.body)
+  
   try {
     const userData = await User.create(req.body);
 

@@ -1,0 +1,15 @@
+<section id="dashboard">
+    <h1>{{title}}</h1>
+
+    {{#if ifTrue }}
+
+        {{#each data}}
+            <p>{{this.id}} : {{this.username}}</p>
+        {{/each }}
+
+    {{else}} 
+        <h1>No Data</h1>
+    {{/if }}
+
+    {{> comments }}
+</section>
